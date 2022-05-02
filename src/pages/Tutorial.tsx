@@ -52,48 +52,48 @@ const Tutorial: React.FC<TutorialProps> = ({ history, setHasSeenTutorial, setMen
 
         <Swiper onSwiper={setSwiper} onSlideChangeTransitionStart={handleSlideChangeStart}>
           <SwiperSlide>
-            <img src="assets/img/RBill.png" alt="" className="slide-image" />
+            <img src="assets/img/EasyPay.png" alt="" className="slide-image" />
             <h2 className="slide-title">
-              Welcome to <b>RBill</b>
+              Welcome to <b>EasyPay</b>
             </h2>
             <p>
-              The <b>RBill app</b> is carefully designed to not only comforting the boring process of repeatitive utility payments but also rewarding you for saving the enviroments by using less resources within this process.
+              The <b>EasyPay app</b> is carefully designed to not only comforting the boring process of repeatitive utility payments but also rewarding you for saving the enviroments by using less resources within this process.
             </p>
           </SwiperSlide>
 
           <SwiperSlide>
             <img src="assets/img/UniPay.png" alt="" className="slide-image" />
-            <h2 className="slide-title">What is RBill?</h2>
-            <p><b>RBill</b> is a comprehensive payment platform that brings the payment process to the next level by introducing comfort, comprehensiveness, efficiency, intelligence and rewards.</p>
+            <h2 className="slide-title">What is EasyPay?</h2>
+            <p><b>EasyPay</b> is a comprehensive payment platform that brings the payment process to the next level by introducing comfort, comprehensiveness, efficiency, intelligence and rewards.</p>
           </SwiperSlide>
           <SwiperSlide>
             <img src="assets/img/ScanPay.png" alt="" className="slide-image" />
             <h2 className="slide-title">Comfort</h2>
-            <p>With <b>RBill</b> bill payment can be done anywhere anytime with an ease of a scan.</p>
+            <p>With <b>EasyPay</b> bill payment can be done anywhere anytime with an ease of a scan.</p>
           </SwiperSlide>
           <SwiperSlide>
             <img src="assets/img/comprehensiveness.png" alt="" className="slide-image" />
             <h2 className="slide-title">Comprehensiveness</h2>
-            <p><b>RBill</b> works with any card from any bank for any payment.</p>
+            <p><b>EasyPay</b> works with any card from any bank for any payment.</p>
           </SwiperSlide>
           <SwiperSlide>
             <img src="assets/img/MngPay.png" alt="" className="slide-image" />
             <h2 className="slide-title">Efficiency</h2>
-            <p>With <b>RBill</b> you can do recurring payments of any kind easily while being able to cancel the recurrance anytime.</p>
+            <p>With <b>EasyPay</b> you can do recurring payments of any kind easily while being able to cancel the recurrance anytime.</p>
           </SwiperSlide>
           <SwiperSlide>
             <img src="assets/img/intelligence.png" alt="" className="slide-image" />
             <h2 className="slide-title">Intelligence</h2>
-            <p>With <b>RBill</b> you not only receive advices for how to reduce your costs, smart usage, but also where the bottlenecks are.</p>
+            <p>With <b>EasyPay</b> you not only receive advices for how to reduce your costs, smart usage, but also where the bottlenecks are.</p>
           </SwiperSlide>
           <SwiperSlide>
             <img src="assets/img/Rpoint.png" alt="" className="slide-image" />
             <h2 className="slide-title">Reward</h2>
-            <p>Finally <b>RBill</b> rewards you for using it in order to further reduce your costs and make the payment more enjoyable.</p>
+            <p>Finally <b>EasyPay</b> rewards you for using it in order to further reduce your costs and make the payment more enjoyable.</p>
           </SwiperSlide>
 
           <SwiperSlide>
-            <img src="assets/img/RBill.png" alt="" className="slide-image" />
+            <img src="assets/img/EasyPay.png" alt="" className="slide-image" />
             <h2 className="slide-title">Ready to Play?</h2>
             <img src="assets/img/utilities.png" alt="" />
             <IonButton fill="clear" onClick={startApp}>
