@@ -95,7 +95,7 @@ const Tutorial: React.FC<TutorialProps> = ({ history, setHasSeenTutorial, setMen
           <SwiperSlide>
             <img src="assets/img/RBill.png" alt="" className="slide-image" />
             <h2 className="slide-title">Ready to Play?</h2>
-            <img src="assets/img/utilities.png" />
+            <img src="assets/img/utilities.png" alt="" />
             <IonButton fill="clear" onClick={startApp}>
               Continue
               <IonIcon slot="end" icon={arrowForward} />

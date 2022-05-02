@@ -1,7 +1,7 @@
 import React from 'react';
 import { IonTabs, IonRouterOutlet, IonTabBar, IonTabButton, IonIcon, IonLabel } from '@ionic/react';
 import { Route, Redirect } from 'react-router';
-import { calendar, location, informationCircle, people, warningOutline, peopleOutline } from 'ionicons/icons';
+import { calendar, location, people, warningOutline, peopleOutline } from 'ionicons/icons';
 import SchedulePage from './SchedulePage';
 import SessionDetail from './SessionDetail';
 import MapView from './MapView';
