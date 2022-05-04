@@ -5,16 +5,16 @@ import { setIsLoggedIn, setUsername } from '../data/user/user.actions';
 import { connect } from '../data/connect';
 import { RouteComponentProps } from 'react-router';
 
-interface OwnProps extends RouteComponentProps {}
+interface OwnProps extends RouteComponentProps { }
 
 interface DispatchProps {
   setIsLoggedIn: typeof setIsLoggedIn;
   setUsername: typeof setUsername;
 }
 
-interface LoginProps extends OwnProps,  DispatchProps { }
+interface LoginProps extends OwnProps, DispatchProps { }
 
-const Login: React.FC<LoginProps> = ({setIsLoggedIn, history, setUsername: setUsernameAction}) => {
+const Login: React.FC<LoginProps> = ({ setIsLoggedIn, history, setUsername: setUsernameAction }) => {
 
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
@@ -25,17 +25,17 @@ const Login: React.FC<LoginProps> = ({setIsLoggedIn, history, setUsername: setUs
   const login = async (e: React.FormEvent) => {
     e.preventDefault();
     setFormSubmitted(true);
-    if(!username) {
+    if (!username) {
       setUsernameError(true);
     }
-    if(!password) {
+    if (!password) {
       setPasswordError(true);
     }
 
-    if(username && password) {
+    if (username && password) {
       await setIsLoggedIn(true);
       await setUsernameAction(username);
-      history.push('/tabs/schedule', {direction: 'none'});
+      history.push('/tabs/schedule', { direction: 'none' });
     }
   };
 
@@ -52,7 +52,7 @@ const Login: React.FC<LoginProps> = ({setIsLoggedIn, history, setUsername: setUs
       <IonContent>
 
         <div className="login-logo">
-          <img src="assets/img/appicon.svg" alt="Ionic logo" />
+          <img src="assets/img/appicon.svg" alt="EasyPay logo" />
         </div>
 
         <form noValidate onSubmit={login}>

@@ -45,8 +45,8 @@ const About: React.FC<AboutProps> = () => {
 
         <div className="about-header">
           {/* Instead of loading an image each time the select changes, use opacity to transition them */}
-          <div className="about-image madison" style={{ 'opacity': location === 'madison' ? '1' : undefined }}></div>
-          <div className="about-image austin" style={{ 'opacity': location === 'austin' ? '1' : undefined }}></div>
+          <div className="about-image madison" style={{ 'opacity': location === 'austin' ? '1' : undefined }}></div>
+          <div className="about-image austin" style={{ 'opacity': location === 'madison' ? '1' : undefined }}></div>
           <div className="about-image chicago" style={{ 'opacity': location === 'chicago' ? '1' : undefined }}></div>
           <div className="about-image seattle" style={{ 'opacity': location === 'seattle' ? '1' : undefined }}></div>
         </div>
@@ -95,7 +95,7 @@ const About: React.FC<AboutProps> = () => {
                 Name
               </IonLabel>
               <IonLabel className="ion-text-end">
-                ica{displayDate(conferenceDate, 'y')}
+                EP{displayDate(conferenceDate, 'y')}
               </IonLabel>
             </IonItem>
             <IonItem>
@@ -103,7 +103,7 @@ const About: React.FC<AboutProps> = () => {
                 Barcode
               </IonLabel>
               <IonLabel className="ion-text-end">
-                makegoodthings
+                EasyPay
               </IonLabel>
             </IonItem>
           </IonList>

@@ -1,6 +1,8 @@
 import { UserActions } from './user.actions';
 import { UserState } from './user.state';
-
+import { Plugins } from '@capacitor/core';
+const { Storage } = Plugins;
+const DARK = 'isDark';
 export function userReducer(state: UserState, action: UserActions): UserState {
   switch (action.type) {
     case 'set-user-loading':
@@ -12,6 +14,7 @@ export function userReducer(state: UserState, action: UserActions): UserState {
     case 'set-has-seen-tutorial':
       return { ...state, hasSeenTutorial: action.hasSeenTutorial };
     case 'set-dark-mode':
+      Storage.set({ key: DARK, value: action.darkMode.toString() });
       return { ...state, darkMode: action.darkMode };
     case 'set-is-loggedin':
       return { ...state, isLoggedin: action.loggedIn };

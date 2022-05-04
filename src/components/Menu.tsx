@@ -55,7 +55,7 @@ const Menu: React.FC<MenuProps> = ({ darkMode, history, isAuthenticated, setDark
       .filter(route => !!route.path)
       .map(p => (
         <IonMenuToggle key={p.title} auto-hide="false">
-          <IonItem detail={false} routerLink={p.path} routerDirection="none" className={location.pathname.startsWith(p.path) ? 'selected' : undefined}>
+          <IonItem detail={false} routerLink={p.path} routerDirection="none" className={p.title != "Upcommings" && location.pathname.startsWith(p.path) ? 'selected' : undefined}>
             <IonIcon slot="start" icon={p.icon} />
             <IonLabel>{p.title}</IonLabel>
           </IonItem>

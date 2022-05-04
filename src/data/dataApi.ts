@@ -10,6 +10,7 @@ const locationsUrl = '/assets/data/locations.json';
 
 const HAS_LOGGED_IN = 'hasLoggedIn';
 const HAS_SEEN_TUTORIAL = 'hasSeenTutorial';
+const DARK = 'isDark';
 const USERNAME = 'username';
 
 export const getConfData = async () => {
@@ -41,14 +42,22 @@ export const getUserData = async () => {
   const response = await Promise.all([
     Storage.get({ key: HAS_LOGGED_IN }),
     Storage.get({ key: HAS_SEEN_TUTORIAL }),
-    Storage.get({ key: USERNAME })]);
+    Storage.get({ key: USERNAME }),
+    Storage.get({ key: DARK }),]
+  );
   const isLoggedin = await response[0].value === 'true';
   const hasSeenTutorial = await response[1].value === 'true';
   const username = await response[2].value || undefined;
+  const darkMode =
+    await response[3].value === null
+      ? window.matchMedia &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches
+      : response[3].value === "true";
   const data = {
     isLoggedin,
     hasSeenTutorial,
-    username
+    username,
+    darkMode
   }
   return data;
 }
