@@ -91,7 +91,7 @@ const Tutorial: React.FC<TutorialProps> = ({ history, setHasSeenTutorial, setMen
         <div className="swiper-container" ref={sl}>
           <div className="swiper-wrapper">
             <div className="swiper-slide">
-              <img src="assets/img/EasyPay.png" alt="" className="slide-image" />
+              <img src="assets/img/easypay.png" alt="" className="slide-image" />
               <h2 className="slide-title">
                 Welcome to <b>EasyPay</b>
               </h2>
